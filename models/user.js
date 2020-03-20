@@ -16,8 +16,55 @@ module.exports = function(sequelize, DataTypes) {
     password: {
       type: DataTypes.STRING,
       allowNull: false
+    },
+    phone: {
+      type: DataTypes.INTEGER,
+      allowNull: false
     }
   });
+
+  module.exports = function(sequelize, DataTypes) {
+    var Address = sequelize.define("Address", {
+      street: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      city: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      state: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      county: {
+        type: DataTypes.STRING,
+        allowNull: false
+      }
+    });
+  };
+
+  module.exports = function(sequelize, DataTypes) {
+    var Job = sequelize.define("Job", {
+      submitDate: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      serviceDate: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      roofGrade: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      jobNotes: {
+        type: DataTypes.TEXT,
+        allowNull: true
+      }
+    });
+  };
+
   // Creating a custom method for our User model. This will check if an unhashed password entered by the user can be compared to the hashed password stored in our database
   User.prototype.validPassword = function(password) {
     return bcrypt.compareSync(password, this.password);
