@@ -1,8 +1,13 @@
 {
   "development": {
     "username": "root",
+<<<<<<< HEAD
     "password": "Jordan923",
     "database": "passport_demo",
+=======
+    "password": "Madylin3!",
+    "database": "njs2_roofing",
+>>>>>>> 005ebc640a69a41012281668ab6fa987df69de2f
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
