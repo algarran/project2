@@ -77,6 +77,6 @@ module.exports = function(sequelize, DataTypes) {
   return User;
 };
 
-//export the modules for use
-module.exports = Address;
-module.exports = Job;
+// //export the modules for use
+// module.exports = Address;
+// module.exports = Job;
