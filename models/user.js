@@ -16,11 +16,11 @@ module.exports = function(sequelize, DataTypes) {
     password: {
       type: DataTypes.STRING,
       allowNull: false
+    },
+    phone: {
+      type: DataTypes.INTEGER,
+      allowNull: false
     }
-    // phone: {
-    //   type: DataTypes.INTEGER,
-    //   allowNull: false
-    // }
   });
 
   // var Address = sequelize.define("Address", {
