@@ -2,7 +2,7 @@
 var express = require("express");
 var session = require("express-session");
 // Requiring passport as we've configured it
-var passport = require("./Sequelize-Passport-Example/config/passport");
+var passport = require("../project2/config/passport");
 
 // Setting up port and requiring models for syncing
 var PORT = process.env.PORT || 8080;
