@@ -23,24 +23,24 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
 
-  // var Address = sequelize.define("Address", {
-  //   street: {
-  //     type: DataTypes.STRING,
-  //     allowNull: false
-  //   },
-  //   city: {
-  //     type: DataTypes.STRING,
-  //     allowNull: false
-  //   },
-  //   state: {
-  //     type: DataTypes.STRING,
-  //     allowNull: false
-  //   },
-  //   county: {
-  //     type: DataTypes.STRING,
-  //     allowNull: false
-  //   }
-  // });
+  var Address = sequelize.define("Address", {
+    street: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    city: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    state: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    county: {
+      type: DataTypes.STRING,
+      allowNull: false
+    }
+  });
 
   // var Job = sequelize.define("Job", {
   //   submitDate: {
@@ -63,7 +63,7 @@ module.exports = function(sequelize, DataTypes) {
 
   //sync models to the DB
   // Job.sync({ force: false });
-  // Address.sync({ force: false });
+  Address.sync({ force: false });
 
   // Creating a custom method for our User model. This will check if an unhashed password entered by the user can be compared to the hashed password stored in our database
   User.prototype.validPassword = function(password) {
