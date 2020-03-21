@@ -20,6 +20,14 @@ module.exports = function(sequelize, DataTypes) {
     phone: {
       type: DataTypes.INTEGER,
       allowNull: false
+    },
+    firstName: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    lastName: {
+      type: DataTypes.INTEGER,
+      allowNull: false
     }
   });
 
