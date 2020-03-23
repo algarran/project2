@@ -4,9 +4,12 @@ form.login {
 }
 
 body {
-background-color: rgb(75, 75, 75);
-background: url("https://www.jsmuckercontracting.com/wp-content/uploads/2020/01/commercial-roof-replacement.jpg") no-repeat;
+background-color: white;
+/* background: url("https://www.jsmuckercontracting.com/wp-content/uploads/2020/01/commercial-roof-replacement.jpg") no-repeat; */
 /* height: 1200px; */
+}
+.container {
+  height: 100%;
 }
 
 h2 {
@@ -18,22 +21,25 @@ h2 {
 p {
   color: white !important;
   font-size: 24px;
-  text-shadow: 0 0 5px black;
+  /* text-shadow: 0 0 5px black; */
 }
 
 label {
-  color: white !important;
+  color: black !important;
   font-size: 24px;
-  text-shadow: 0 0 5px black;
+  /* text-shadow: 0 0 5px black; */
+  padding-top: 15px;
+  margin-bottom: 0em;
 }
 
 a {
-  color: rgb(69, 255, 1) !important;
+  color: rgba(69, 255, 1, 0.653) !important;
   font-size: 24px;
-  text-shadow: 0 0 5px black;
+  text-shadow: 0 0 1px black;
 }
 header {
   overflow: hidden;
+  margin-top: 1px;
 }
 header img {
   margin-left: 50%;
@@ -53,16 +59,26 @@ header img {
 }
 
 .btn1 {
-  margin-left: 300px;
-  margin-top: 350px;
+  background-color: crimson !important;
+  color: white !important;
+  /* align: center;
+  margin-top: 50px; */
+  /* margin-left: 300px;
+
   color: crimson;
-  position: fixed;
+  position: fixed; */
   /* bottom: 0; */
 }
 .btn2 {
-  margin-left: 900px;
+  background-color: crimson !important;
+  color: white !important;
+  /* margin-left: 900px;
   margin-top: 350px;
-  color: crimson;
-  position: fixed;
+
+  position: fixed; */
   /* bottom: 0; */
 }
+/* .right {
+  margin-left: 0px !important;
+  padding-right: 0px !important;
+} */
