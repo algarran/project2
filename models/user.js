@@ -16,16 +16,19 @@ module.exports = function(sequelize, DataTypes) {
     password: {
       type: DataTypes.STRING,
       allowNull: false
-    },
-    phone: {
-      type: DataTypes.INTEGER,
-      allowNull: false
-    },
+    }
+  });
+
+  var Client = sequelize.define("Client", {
     firstName: {
       type: DataTypes.INTEGER,
       allowNull: false
     },
     lastName: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    phone: {
       type: DataTypes.INTEGER,
       allowNull: false
     }
@@ -72,6 +75,7 @@ module.exports = function(sequelize, DataTypes) {
   //sync models to the DB
   Job.sync({ force: false });
   Address.sync({ force: false });
+  Client.sync({ force: false });
 
   // Creating a custom method for our User model. This will check if an unhashed password entered by the user can be compared to the hashed password stored in our database
   User.prototype.validPassword = function(password) {
