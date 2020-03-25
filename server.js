@@ -33,20 +33,20 @@ db.sequelize.sync().then(function() {
   });
 });
 
-// // AJAX call
-// var api = function (){
-// var baseURL = "https://maps.googleapis.com/maps/api/staticmap?" + apiKey;
-//   $.ajax({
-//     url: baseURL,
-//     method: "GET",
-//   }).then(function(response){
-//     console.log(response);
+// AJAX call
+var api = function (){
+var baseURL = "https://maps.googleapis.com/maps/api/staticmap?" + apiKey;
+  $.ajax({
+    url: baseURL,
+    method: "GET",
+  }).then(function(response){
+    console.log(response);
 
-//     var aerial = response;
-//     $
-//   });
+    var aerial = response;
+    $
+  });
 
-//   api();
-// };
+  api();
+};
 
-// "https://maps.googleapis.com/maps/api/staticmap?center=40.714728,-73.998672&zoom=12&size=400x400&maptype=satellite&key=AIzaSyDLw4vXEUzhRZG-sitgk-E3Q5e2nbpOThE"
+"https://maps.googleapis.com/maps/api/staticmap?center=40.714728,-73.998672&zoom=12&size=400x400&maptype=satellite&key=AIzaSyDLw4vXEUzhRZG-sitgk-E3Q5e2nbpOThE"
