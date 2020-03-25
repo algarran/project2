@@ -1,6 +1,10 @@
 // Requiring necessary npm packages
 var express = require("express");
 var session = require("express-session");
+
+// Api key
+const apiKey = "&key=AIzaSyDLw4vXEUzhRZG-sitgk-E3Q5e2nbpOThE";
+
 // Requiring passport as we've configured it
 var passport = require("./config/passport");
 
@@ -28,3 +32,21 @@ db.sequelize.sync().then(function() {
     console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
   });
 });
+
+// // AJAX call
+// var api = function (){
+// var baseURL = "https://maps.googleapis.com/maps/api/staticmap?" + apiKey;
+//   $.ajax({
+//     url: baseURL,
+//     method: "GET",
+//   }).then(function(response){
+//     console.log(response);
+
+//     var aerial = response;
+//     $
+//   });
+
+//   api();
+// };
+
+// "https://maps.googleapis.com/maps/api/staticmap?center=40.714728,-73.998672&zoom=12&size=400x400&maptype=satellite&key=AIzaSyDLw4vXEUzhRZG-sitgk-E3Q5e2nbpOThE"
