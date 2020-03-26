@@ -50,13 +50,11 @@ module.exports = function(app) {
       });
     }
   });
-  
-  // Router to PUT the customer information to the existing customer page
-  app.put('/api/customer', function(req, res) {
-    customer.update(req.params.id, function(result){
-      console.log(result);
-          res.status(200).end();
-    });
-  })
 
+  // Router to PUT the customer information to the existing customer page
+  app.get('/api/all', function(req, res){
+      Client.findAll({}).then(function(results) {
+        res.json(results);
+      });
+  });
 };
