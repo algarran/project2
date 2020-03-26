@@ -12,7 +12,7 @@ background-color: white;
   height: 100%;
 }
 
-h2 {
+h3 {
   color: white !important;
   text-shadow: 0 0 5px black;
   text-align: auto;
@@ -22,14 +22,6 @@ p {
   color: white !important;
   font-size: 24px;
   /* text-shadow: 0 0 5px black; */
-}
-
-label {
-  color: black !important;
-  font-size: 24px;
-  /* text-shadow: 0 0 5px black; */
-  padding-top: 15px;
-  margin-bottom: 0em;
 }
 
 a {
@@ -82,3 +74,15 @@ header img {
   margin-left: 0px !important;
   padding-right: 0px !important;
 } */
+
+.navbar-brand {
+  float: left;
+  padding: 21px 15px 15px 15px;
+  font-size: 26px;
+  line-height: 20px;
+  height: 69px;
+}
+
+#linkbar{
+  height: 69px;
+}
