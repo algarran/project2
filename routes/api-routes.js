@@ -1,7 +1,6 @@
 // Requiring our models and passport as we've configured it
 var db = require("../models");
 var passport = require("../config/passport");
-var customer = 
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -52,13 +51,12 @@ module.exports = function(app) {
     }
   });
 
-  //Router to PUT the customer information to the existing customer page
-  app.put('/api/customer', function(req, res) {
-    customer.update(req.params.id, function(result){
-      console.log(result);
-          res.status(200).end();
-    });
-  })
+  // Router to PUT the customer information to the existing customer page
+  app.get('/api/all', function(req, res){
+      Client.findAll({}).then(function(results) {
+        res.json(results);
+      });
+  });
 };
 
 
