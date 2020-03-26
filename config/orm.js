@@ -1,4 +1,4 @@
-var connection = require('./');
+// var connection = require('./');
 
 //Objet for our SQL statement function
 var orm = {
