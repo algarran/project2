@@ -11,6 +11,10 @@ background-color: white;
 .container {
   height: 100%;
 }
+#newcustform {
+  margin-top: 50px;
+  margin-left: auto;
+}
 
 h3 {
   color: white !important;
@@ -41,6 +45,15 @@ header img {
 }
 
 .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0, 179, 255);
+  color: white;
+  text-align: center;
+}
+.footer2 {
   position: fixed;
   left: 0;
   bottom: 0;
