@@ -6,9 +6,6 @@ const generateHTML = require('./generateHTML');
 const axios = require('axios');
 const pdf = require('html-pdf');
 
-// Api key
-const apiKey = "&key=AIzaSyDLw4vXEUzhRZG-sitgk-E3Q5e2nbpOThE";
-
 // Requiring passport as we've configured it
 var passport = require("./config/passport");
 
@@ -36,5 +33,4 @@ db.sequelize.sync().then(function() {
     console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
   });
 });
-
 
