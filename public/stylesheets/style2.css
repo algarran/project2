@@ -29,10 +29,11 @@ p {
 }
 
 a {
-  color: rgba(69, 255, 1, 0.653) !important;
+  color:white !important;
   font-size: 24px;
-  text-shadow: 0 0 1px black;
+  text-shadow: 0 0 10px black;
 }
+
 header {
   overflow: hidden;
   margin-top: 1px;
