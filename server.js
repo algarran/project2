@@ -3,9 +3,8 @@ var express = require("express");
 var session = require("express-session");
 const fs = require('fs');
 const generateHTML = require('./generateHTML');
-
-// Api key
-const apiKey = "&key=AIzaSyDLw4vXEUzhRZG-sitgk-E3Q5e2nbpOThE";
+const axios = require('axios');
+const pdf = require('html-pdf');
 
 // Requiring passport as we've configured it
 var passport = require("./config/passport");
@@ -35,15 +34,8 @@ db.sequelize.sync().then(function() {
   });
 });
 
-// AJAX call
-var api = function generate(){
-var baseURL = "https://maps.googleapis.com/maps/api/staticmap?" + apiKey;
-  $.ajax({
-    url: baseURL,
-    method: "GET",
-  }).then(function(response){
-    console.log(response);
 
+<<<<<<< HEAD
     var aerial = response;
     $
   });
@@ -100,3 +92,5 @@ function writeToFile(newFile, html) {
 };
 
 // writeToFile(newFile, html);
+=======
+>>>>>>> c7e05132ac6c2c2f088fa6ec55bc36f664e24715
