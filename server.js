@@ -3,6 +3,8 @@ var express = require("express");
 var session = require("express-session");
 const fs = require('fs');
 const generateHTML = require('./generateHTML');
+const axios = require('axios');
+const pdf = require('html-pdf');
 
 // Api key
 const apiKey = "&key=AIzaSyDLw4vXEUzhRZG-sitgk-E3Q5e2nbpOThE";
@@ -35,68 +37,4 @@ db.sequelize.sync().then(function() {
   });
 });
 
-// AJAX call
-var api = function generate(){
-var baseURL = "https://maps.googleapis.com/maps/api/staticmap?" + apiKey;
-  $.ajax({
-    url: baseURL,
-    method: "GET",
-  }).then(function(response){
-    console.log(response);
 
-    var aerial = response;
-    $
-  });
-
-  api();
-};
-
-"https://maps.googleapis.com/maps/api/staticmap?center=40.714728,-73.998672&zoom=12&size=400x400&maptype=satellite&key=AIzaSyDLw4vXEUzhRZG-sitgk-E3Q5e2nbpOThE"
-
-const databaseData = {
-  firstName: '',
-  lastName: '',
-  phoneNumber: '',
-  email: '',
-
-  streetAddress: '',
-  city: '',
-  state: '',
-  county: '',
-
-  submitDate: '',
-  notes: '',
-  roofGrade: ''
-};
-
-
-// .then((team) => {
-//   let HTML = generateMemberHTML(team.members);
-//   HTML = generateHTML.generateHTML(HTML);
-//   fs.writeFile('./output/team.html', HTML, (err) => {
-//       if (err) {
-//           return console.log(err);
-//       }
-//       console.log('Success! File written to team.html in the output folder');
-//   });
-// });
-
-function writeToFile(newFile, html) {
-  console.log('Making your PDF file ...');
-  fs.writeFile(newFile, html, (err) => {
-      if (err) {
-          return console.log(err);
-      }
-  });
-  const options = {
-      format: 'A3',
-      orientation: 'landscape',
-  };
-  pdf.create(html, options).toFile(`./${databaseData.firstName+lastName}.pdf`, (err) => {
-      console.log('File Created!');
-      if (err) {return console.log(err);
-      };
-  });
-};
-
-// writeToFile(newFile, html);
