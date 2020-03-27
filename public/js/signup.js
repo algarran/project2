@@ -36,7 +36,7 @@ $(document).ready(function() {
   }
 
   function handleLoginErr(err) {
-    $("#alert .msg").text("Invalid Username/Password");
+    $("#alert .msg").text("Invalid username and/or password");
     $("#alert").fadeIn(500);
   }
 });
