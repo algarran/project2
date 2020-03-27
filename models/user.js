@@ -21,15 +21,15 @@ module.exports = function(sequelize, DataTypes) {
 
   var Client = sequelize.define("Client", {
     firstName: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false
     },
     lastName: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false
     },
     phone: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false
     },
     email: {
