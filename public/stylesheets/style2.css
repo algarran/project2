@@ -10,10 +10,28 @@ background-color: white;
 }
 .container {
   height: 100%;
+  align-content: center !important;
+  text-align: center !important;
 }
 #newcustform {
   margin-top: 50px;
   margin-left: auto;
+  text-align: center;
+  display: table;
+}
+.row {
+  margin-left: 100px;
+  text-align: center;
+}
+
+.button.is-link {
+  color:white;
+  background-color: rgb(17, 161, 228);
+}
+
+.button.is-link2 {
+  color:white;
+  background-color: rgb(99, 101, 103);
 }
 
 h3 {

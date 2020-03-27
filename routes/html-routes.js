@@ -27,13 +27,15 @@ module.exports = function(app) {
   app.get("/members", isAuthenticated, function(req, res) {
     res.sendFile(path.join(__dirname, "../public/members.html"));
   });
-
+  
   app.get("/newcust", function(req, res) {
     // If the user already has an account send them to the members page
     if (req.user) {
       res.redirect("/newcust");
     }
     res.sendFile(path.join(__dirname, "../public/newcust.html"));
+  app.get("/existingcust", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/existingcust.html"));
   });
 
 };
