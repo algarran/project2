@@ -22,19 +22,19 @@ module.exports = function(sequelize, DataTypes) {
   var Client = sequelize.define("Client", {
     firstName: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     lastName: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     phone: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     email: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
       unique: true,
       validate: {
           isEmail:true
@@ -45,34 +45,34 @@ module.exports = function(sequelize, DataTypes) {
   var Address = sequelize.define("Address", {
     street: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     city: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     state: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     county: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     }
   });
 
   var Job = sequelize.define("Job", {
     submitDate: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     serviceDate: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     roofGrade: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     jobNotes: {
       type: DataTypes.TEXT,
