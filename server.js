@@ -1,10 +1,7 @@
 // Requiring necessary npm packages
 var express = require("express");
 var session = require("express-session");
-const fs = require('fs');
-const generateHTML = require('./generateHTML');
-const axios = require('axios');
-const pdf = require('html-pdf');
+
 
 // Requiring passport as we've configured it
 var passport = require("./config/passport");
