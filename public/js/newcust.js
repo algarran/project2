@@ -48,15 +48,15 @@ var api = function generate(){
               return console.log(err);
           }
       });
-      const options = {
-          format: 'A3',
-          orientation: 'landscape',
-      };
-      pdf.create(html, options).toFile(`./${databaseData.firstName+databaseData.lastName}.pdf`, (err) => {
-          console.log('File Created!');
-          if (err) {return console.log(err);
-          };
-      });
+      // const options = {
+      //     format: 'A3',
+      //     orientation: 'landscape',
+      // };
+      // pdf.create(html, options).toFile(`./${databaseData.firstName+databaseData.lastName}.pdf`, (err) => {
+      //     console.log('File Created!');
+      //     if (err) {return console.log(err);
+      //     };
+      // });
     };
     
     const html = generateHTML.generateHTML(databaseData);
