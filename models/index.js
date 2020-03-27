@@ -40,9 +40,22 @@ if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
   connection = mysql.createConnection({
-    host: 'pwcspfbyl73eccbn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-    user: 'veur53usiao0gznv',
-    password: 'vw9sh0qdktv9049o',
-    database: 'rxoo1zlrqnw2b168'
+    host: 'localhost',
+    user: 'root',
+    port: 3306,
+    password: 'Jordan923',
+    database: 'njs2_roofing'
   });
 };
+
+// // connection to heroku from database
+// if (process.env.JAWSDB_URL) {
+//   connection = mysql.createConnection(process.env.JAWSDB_URL);
+// } else {
+//   connection = mysql.createConnection({
+//     host: 'pwcspfbyl73eccbn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+//     user: 'veur53usiao0gznv',
+//     password: 'vw9sh0qdktv9049o',
+//     database: 'rxoo1zlrqnw2b168'
+//   });
+// };
