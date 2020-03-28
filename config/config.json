@@ -1,7 +1,12 @@
 {
   "development": {
     "username": "root",
+<<<<<<< HEAD
     "password": "Jordan923",
+=======
+
+    "password": "Password",
+>>>>>>> 797cad99311962199971ea12d0fc3c588c73229d
     "database": "njs2_roofing",
     "host": "127.0.0.1",
     "dialect": "mysql"
