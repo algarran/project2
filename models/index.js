@@ -35,18 +35,18 @@ db.Sequelize = Sequelize;
 
 module.exports = db;
 
-// connection to heroku from database
-if (process.env.JAWSDB_URL) {
-  connection = mysql.createConnection(process.env.JAWSDB_URL);
-} else {
-  connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    port: 3306,
-    password: 'Jordan923',
-    database: 'njs2_roofing'
-  });
-};
+// // connection to heroku from database
+// if (process.env.JAWSDB_URL) {
+//   connection = mysql.createConnection(process.env.JAWSDB_URL);
+// } else {
+//   connection = mysql.createConnection({
+//     host: 'localhost',
+//     user: 'root',
+//     port: 3306,
+//     password: 'Jordan923',
+//     database: 'njs2_roofing'
+//   });
+// };
 
 // // connection to heroku from database
 // if (process.env.JAWSDB_URL) {
