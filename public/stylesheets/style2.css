@@ -5,14 +5,12 @@ form.login {
 
 body {
 background-color: white;
-/* background: url("https://www.jsmuckercontracting.com/wp-content/uploads/2020/01/commercial-roof-replacement.jpg") no-repeat; */
-/* height: 1200px; */
 }
 .container {
   height: 100%;
   width: 100%;
-  align-content: center !important;
-  text-align: center !important;
+  /* align-content: center !important; */
+  /* text-align: center !important; */
 }
 #newcustform {
   margin-top: 50px;
