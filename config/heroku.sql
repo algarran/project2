@@ -2,9 +2,10 @@
 
 create table User (
 id int auto_increment not null,
- email varchar(255) null unique,
+  email varchar(255) null unique,
  password varchar(255) null,
  primary key(id)
+
 );
 
 create table Client (
@@ -24,6 +25,7 @@ county varchar(255) not null
 );
 
 create table Job (
+
 submitDate varchar(255) null,
 serviceDate varchar(255) null,
 roofGrade varchar(255) null,
