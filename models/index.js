@@ -43,7 +43,8 @@ module.exports = db;
 //     host: 'localhost',
 //     user: 'root',
 //     port: 3306,
-//     password: 'Madylin3!',
+
+//     password: 'Jordan923',
 //     database: 'njs2_roofing'
 //   });
 // };
