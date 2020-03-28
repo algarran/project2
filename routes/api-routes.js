@@ -1,12 +1,21 @@
 // Requiring our models and passport as we've configured it
 var db = require("../models");
 var passport = require("../config/passport");
-var Client = require('../models/user.js');
+// var Client = require('../models/user.js');
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
+
+  app.get('/api/all', function(req, res){
+    console.log(res);
+      db.Client.findAll({})
+      .then(function(cust) {
+        res.json(cust);
+      });
+  });
+
   app.post("/api/login", passport.authenticate("local"), function(req, res) {
     // Sending back a password, even a hashed password, isn't a good idea
     res.json({
@@ -54,11 +63,7 @@ module.exports = function(app) {
   });
 
   // Router to PUT the customer information to the existing customer page
-  app.get('api/all', function(req, res){
-      db.Client.findAll({}).then(function(res) {
-        res.json(res);
-      });
-  });
+
 };
 
 
