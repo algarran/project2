@@ -2,7 +2,7 @@
 const fs = require('fs');
 const generateHTML = require('../../generateHTML');
 const axios = require('axios');
-const pdf = require('html-pdf');
+// const pdf = require('html-pdf');
 var mykey = apiKey.myKey;
 
 let today = new Date().toISOString().substr(0, 10);
