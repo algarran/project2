@@ -95,9 +95,10 @@ module.exports = function(sequelize, DataTypes) {
   User.addHook("beforeCreate", function(user) {
     user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(10), null);
   });
-  return User;
+  return User, Client, Address, Job
 };
 
 // //export the modules for use
 // module.exports = Address;
 // module.exports = Job;
+// module.exports = Clients;
