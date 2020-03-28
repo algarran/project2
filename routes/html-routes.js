@@ -37,7 +37,8 @@ module.exports = function (app) {
     app.get("/existingcust", function (req, res) {
       res.sendFile(path.join(__dirname, "../public/existingcust.html"));
     });
-  app.get("/existingcust", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/existingcust.html"));
+    app.get("/existingcust", function (req, res) {
+      res.sendFile(path.join(__dirname, "../public/existingcust.html"));
+    });
   });
 };
