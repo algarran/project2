@@ -15,6 +15,19 @@ module.exports = function(app) {
         res.json(cust);
       });
   });
+//api to post the address to the DB
+  app.post('/api/address/', function(req, res) {
+    console.log(req.body);
+    db.Address.create({
+      street: req.body.street,
+      city: req.body.city,
+      state: req.body.state,
+      county: req.body.state
+    })
+    .then(function(dbAddress) {
+      res.json(dbAddress);
+    });
+  });
 
   app.post("/api/login", passport.authenticate("local"), function(req, res) {
     // Sending back a password, even a hashed password, isn't a good idea
