@@ -71,14 +71,35 @@ function writeToFile(newFile, html) {
 const html = generateHTML.generateHTML(databaseData);
 writeToFile(newFile, html);
 
-
-$(document).ready(function () {
-    console.log('Ready!');
-    $("#submit").submit(function() {
+//event handler on the submit button to post to the db and run the html creator function
+    $("#submit").on('Submit', function handleFormSubmit(event) {
+        event.preventDefault();
         generate();
     });
 
+
+//constructs the object to hand to the db
+//new Customer variable to pass to the db
+let newCust = {
+   firstName: firstNameInput.val().trim(),
+   lastName: lastNameInput.val().trim(),
+   phone: phoneInput.val().trim(),
+   email: emailInput.val().trim(),
+
+};
+//new address object to pass to the db
+let newAddress = {
+    street: streetInput.val().trim(),
+    city: cityInput.val().trim,
+    state: stateInput.val().trim(),
+    county: countyInput.val().trim()
+};
+// new job object to pass to the db
+let newJob = {
+    submitDate: submitInput.val().trim(),
+    jobNotes: jobNotes.val().trim()
+};
 //varaibles for the api calls to use
-});
+
 
 });
