@@ -5,6 +5,25 @@ const axios = require('axios');
 // const pdf = require('html-pdf');
 var mykey = apiKey.myKey;
 
+$(document).ready(function(){
+
+//variables from the form, needed for the post route api
+let firstNameInput = $('#firstName');
+let lastNameInput = $('#lastName');
+let phoneInput = $('#phone');
+let emailInput = $('email')
+
+let streetInput = $('#street');
+let cityInput = $('#city');
+let stateInput = $('#state');
+let countyInput = $('#county');
+
+let submitInput = $('#subDate');
+let noteInput = $('#notes');
+
+
+
+
 let today = new Date().toISOString().substr(0, 10);
 document.querySelector("#date").value = today;
 
@@ -59,5 +78,7 @@ $(document).ready(function () {
         generate();
     });
 
+//varaibles for the api calls to use
+});
 
 });
