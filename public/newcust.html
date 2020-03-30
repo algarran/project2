@@ -23,24 +23,24 @@
         <div class="field is-grouped is-grouped-multiline">
             <label class="label">First Name</label><span>-</span>
             <div class="control">
-                <input class="input" type="text" placeholder="First Name">
+                <input class="input" id='firstName' type="text" placeholder="First Name">
             </div>
 
             <label class="label">Last Name</label><span>-</span>
             <div class="control">
-                <input class="input" type="text" placeholder="Last Name">
+                <input class="input" id='lastName' type="text" placeholder="Last Name">
             </div>
         </div>
 
         <div class="field is-grouped is-grouped-multiline">
             <label class="label">Phone Number</label><span>-</span>
             <div class="control">
-                <input class="input" type="tel" placeholder="Phone Number">
+                <input class="input" id='phone' type="tel" placeholder="Phone Number">
             </div>
 
             <label class="label">Email</label><span>-</span>
             <div class="control has-icons-left has-icons-right">
-                <input class="input" type="email" placeholder="Email Address">
+                <input class="input" id='email' type="email" placeholder="Email Address">
                 <span class="icon is-small is-left">
                     <i class="fas fa-envelope"></i>
                 </span>
@@ -53,12 +53,12 @@
         <div class="field is-grouped">
             <label class="label">Street Address </label><span>-</span>
             <div class="control">
-                <input class="input" type="text" placeholder="###### Street Name">
+                <input class="input" id='street' type="text" placeholder="###### Street Name">
             </div>
 
             <label class="label">City</label><span>-</span>
             <div class="control">
-                <input class="input" type="text" placeholder="City">
+                <input class="input" id='city' type="text" placeholder="City">
             </div>
         </div>
 
@@ -66,7 +66,7 @@
             <label class="label">State</label><span>-</span>
             <div class="control">
                 <div class="select is-fullwidth">
-                    <select name="state">
+                    <select name="state" id='state'>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -124,21 +124,21 @@
 
             <label class="label">County</label><span>-</span>
             <div class="control">
-                <input class="input" type="text" placeholder="County">
+                <input class="input" id='county' type="text" placeholder="County">
             </div>
         </div>
 
         <div class="field is-grouped">
             <label class="label">Submit Date</label><span>-</span>
             <div class="control">
-                <input class="input" id="date" type="date" placeholder="Submit Time & Date">
+                <input class="input" id="subDate" type="date" placeholder="Submit Time & Date">
             </div>
         </div>
 
         <div class="field">
             <label class="label">Notes</label>
             <div class="control">
-                <textarea class="textarea" placeholder="Technician Notes"></textarea>
+                <textarea class="textarea" id='notes' placeholder="Technician Notes"></textarea>
             </div>
         </div>
 
