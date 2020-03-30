@@ -17,7 +17,7 @@ module.exports = function(app) {
   });
 //api to post the address to the DB
   app.post('/api/address/', function(req, res) {
-    console.log(req.body);
+    console.log(req.body, 'address');
     db.Address.create({
       street: req.body.street,
       city: req.body.city,
@@ -26,6 +26,34 @@ module.exports = function(app) {
     })
     .then(function(dbAddress) {
       res.json(dbAddress);
+    });
+  });
+
+  //api route to post the cusomter info to the DB
+  app.post('/api/client' , function(req,res) {
+    console.log(req.body, 'client');
+    db.Client.create({
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      phone: req.body.phone,
+      email: req.body.email
+    })
+    .then(function(dbClient) {
+      res.json(dbClient)
+    });
+  });
+
+  //api route to post the job related info into the DB
+  app.post('/api/job', function(req,res) {
+    console.log(req.body , 'job');
+    db.Job.create({
+      submitDate: req.body.submitDate,
+      serviceDate: req.body.serviceDate,
+      roofGrade: req.body.roofGrade,
+      jobNotes: req.body.jobNotes
+    })
+    .then (function(dbJob) {
+      res.json(dbJob)
     });
   });
 
